@@ -9,21 +9,22 @@
 /* Begin PBXBuildFile section */
 		5439C8E929A8B0DC00CF2EC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439C8E829A8B0DC00CF2EC3 /* AppDelegate.swift */; };
 		5439C8EB29A8B0DC00CF2EC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439C8EA29A8B0DC00CF2EC3 /* SceneDelegate.swift */; };
-		5439C8ED29A8B0DC00CF2EC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439C8EC29A8B0DC00CF2EC3 /* ViewController.swift */; };
-		5439C8F029A8B0DC00CF2EC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5439C8EE29A8B0DC00CF2EC3 /* Main.storyboard */; };
+		5439C8ED29A8B0DC00CF2EC3 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439C8EC29A8B0DC00CF2EC3 /* CalendarViewController.swift */; };
 		5439C8F229A8B0DD00CF2EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5439C8F129A8B0DD00CF2EC3 /* Assets.xcassets */; };
 		5439C8F529A8B0DD00CF2EC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5439C8F329A8B0DD00CF2EC3 /* LaunchScreen.storyboard */; };
+		5439C8FE29A8B36700CF2EC3 /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5439C8FD29A8B36700CF2EC3 /* CalendarKit */; };
+		5439C92429A8D29000CF2EC3 /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439C92329A8D29000CF2EC3 /* EKWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5439C8E529A8B0DC00CF2EC3 /* CalendarForSportApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarForSportApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5439C8E829A8B0DC00CF2EC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5439C8EA29A8B0DC00CF2EC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5439C8EC29A8B0DC00CF2EC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5439C8EF29A8B0DC00CF2EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5439C8EC29A8B0DC00CF2EC3 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		5439C8F129A8B0DD00CF2EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5439C8F429A8B0DD00CF2EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5439C8F629A8B0DD00CF2EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5439C92329A8D29000CF2EC3 /* EKWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5439C8FE29A8B36700CF2EC3 /* CalendarKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,10 +58,10 @@
 		5439C8E729A8B0DC00CF2EC3 /* CalendarForSportApp */ = {
 			isa = PBXGroup;
 			children = (
+				5439C92329A8D29000CF2EC3 /* EKWrapper.swift */,
 				5439C8E829A8B0DC00CF2EC3 /* AppDelegate.swift */,
 				5439C8EA29A8B0DC00CF2EC3 /* SceneDelegate.swift */,
-				5439C8EC29A8B0DC00CF2EC3 /* ViewController.swift */,
-				5439C8EE29A8B0DC00CF2EC3 /* Main.storyboard */,
+				5439C8EC29A8B0DC00CF2EC3 /* CalendarViewController.swift */,
 				5439C8F129A8B0DD00CF2EC3 /* Assets.xcassets */,
 				5439C8F329A8B0DD00CF2EC3 /* LaunchScreen.storyboard */,
 				5439C8F629A8B0DD00CF2EC3 /* Info.plist */,
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = CalendarForSportApp;
+			packageProductDependencies = (
+				5439C8FD29A8B36700CF2EC3 /* CalendarKit */,
+			);
 			productName = CalendarForSportApp;
 			productReference = 5439C8E529A8B0DC00CF2EC3 /* CalendarForSportApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 5439C8DC29A8B0DC00CF2EC3;
+			packageReferences = (
+				5439C8FC29A8B36700CF2EC3 /* XCRemoteSwiftPackageReference "CalendarKit" */,
+			);
 			productRefGroup = 5439C8E629A8B0DC00CF2EC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +135,6 @@
 			files = (
 				5439C8F529A8B0DD00CF2EC3 /* LaunchScreen.storyboard in Resources */,
 				5439C8F229A8B0DD00CF2EC3 /* Assets.xcassets in Resources */,
-				5439C8F029A8B0DC00CF2EC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +145,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5439C8ED29A8B0DC00CF2EC3 /* ViewController.swift in Sources */,
+				5439C8ED29A8B0DC00CF2EC3 /* CalendarViewController.swift in Sources */,
 				5439C8E929A8B0DC00CF2EC3 /* AppDelegate.swift in Sources */,
 				5439C8EB29A8B0DC00CF2EC3 /* SceneDelegate.swift in Sources */,
+				5439C92429A8D29000CF2EC3 /* EKWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5439C8EE29A8B0DC00CF2EC3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5439C8EF29A8B0DC00CF2EC3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5439C8F329A8B0DD00CF2EC3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,11 +290,12 @@
 				DEVELOPMENT_TEAM = G3GHD95S4N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CalendarForSportApp/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "The app needs access to calendar to display events";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +319,12 @@
 				DEVELOPMENT_TEAM = G3GHD95S4N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CalendarForSportApp/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "The app needs access to calendar to display events";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5439C8FC29A8B36700CF2EC3 /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5439C8FD29A8B36700CF2EC3 /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5439C8FC29A8B36700CF2EC3 /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5439C8DD29A8B0DC00CF2EC3 /* Project object */;
 }
